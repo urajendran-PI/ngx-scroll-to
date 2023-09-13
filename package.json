@@ -1,6 +1,6 @@
 {
-  "name": "@nicky-lenaers/ngx-scroll-to-demo",
-  "description": "Demo Application for @nicky-lenaers/ngx-scroll-to package.",
+  "name": "@urajendran-pi/ngx-scroll-to-demo",
+  "description": "Fork project for ngx-scroll-to package.",
   "version": "14.0.0",
   "license": "MIT",
   "scripts": {
@@ -21,26 +21,12 @@
     "lib:package": "yarn build:lib && yarn copy:readme && cd ./dist/ngx-scroll-to && yarn pack",
     "prelib:publish": "yarn lib:package",
     "lib:publish": "cd ./dist/ngx-scroll-to && yarn publish --access=public",
-    "tags": "yarn tag list @nicky-lenaers/ngx-scroll-to",
+    "tags": "yarn tag list @urajendran-pi/ngx-scroll-to",
     "prepare": "husky install"
   },
   "private": false,
-  "contributors": [
-    {
-      "name": "Robbert van Caem"
-    }
-  ],
   "author": {
-    "name": "Nicky Lenaers",
-    "email": "nicky@newgameplus.online"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nicky-lenaers/ngx-scroll-to.git"
-  },
-  "homepage": "https://github.com/nicky-lenaers/ngx-scroll-to#readme",
-  "bugs": {
-    "url": "https://github.com/nicky-lenaers/ngx-scroll-to/issues"
+    "name": "Uday Rajendran"
   },
   "dependencies": {
     "@angular/animations": "^14.2.7",

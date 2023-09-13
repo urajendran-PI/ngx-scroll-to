@@ -11,7 +11,7 @@
   <br/>
 </div>
 
-<table>
+
   <tr>
     <th align="left">Subject</th>
     <th align="left">Type</th>
@@ -100,40 +100,18 @@
   </tr>
 </table>
 
-Current Angular Version
-
-[![npm version](https://img.shields.io/npm/v/%40angular%2Fcore.svg?style=flat-square)](https://www.npmjs.com/~angular)  
 
 ## Installation
 Angular 14
 ```sh
-$ npm install @nicky-lenaers/ngx-scroll-to
+$ npm install @urajendran-pi/ngx-scroll-to
 ```
-Angular 13
-```sh
-$ npm install @nicky-lenaers/ngx-scroll-to@'13'
-```
-Angular 8 and 9
-```sh
-$ npm install @nicky-lenaers/ngx-scroll-to@'9'
-```
-Angular 7
-```sh
-$ npm install @nicky-lenaers/ngx-scroll-to@'2'
-```
-Angular 6
-```sh
-$ npm install @nicky-lenaers/ngx-scroll-to@'1'
-```
-Angular <= 5.x
-```sh
-$ npm install @nicky-lenaers/ngx-scroll-to@'<1'
-```
+
 
 ## Setup
 ```typescript
 ...
-import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { ScrollToModule } from '@urajendran-pi/ngx-scroll-to';
 ...
 
 @NgModule({
@@ -192,7 +170,7 @@ Besides scrolling to a specific element, it is also possible to scroll a given o
 
 ```typescript
 import { Injectable } from '@angular/core';
-import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scroll-to';
+import { ScrollToService, ScrollToConfigOptions } from '@urajendran-pi/ngx-scroll-to';
 
 @Injectable()
 export class MyService {
@@ -222,7 +200,7 @@ Just like with the Directive, the Service can be used to scroll to an offset onl
 
 ```typescript
 import { Injectable } from '@angular/core';
-import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scroll-to';
+import { ScrollToService, ScrollToConfigOptions } from '@urajendran-pi/ngx-scroll-to';
 
 @Injectable()
 export class MyService {
@@ -243,7 +221,7 @@ export class MyService {
 ## Advanced Usage - Directive
 **my.component.ts**
 ```typescript
-import { ScrollToAnimationEasing, ScrollToEvent, ScrollToOffsetMap } from '@nicky-lenaers/ngx-scroll-to';
+import { ScrollToAnimationEasing, ScrollToEvent, ScrollToOffsetMap } from '@urajendran-pi/ngx-scroll-to';
 
 @Component({
   selector: 'my-component',
@@ -320,7 +298,7 @@ export class MyComponent {
 
 ```typescript
 import { Injectable } from '@angular/core';
-import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scroll-to';
+import { ScrollToService, ScrollToConfigOptions } from '@urajendran-pi/ngx-scroll-to';
 
 @Injectable()
 export class MyService {
@@ -393,7 +371,7 @@ In some occasions, one might misspell a target or container selector string. Eve
 **faulty.service.ts**
 ```typescript
 import { Injectable } from '@angular/core';
-import { ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
+import { ScrollToService } from '@urajendran-pi/ngx-scroll-to';
 
 @Injectable()
 export class FaultyService {
@@ -455,12 +433,6 @@ This value controls the offset with respect to the top of the destination HTML e
 
 #### <a name="ngx-scroll-to-offset-map-details"></a>`[ngxScrollToOffsetMap]`
 This value allows you to control dynamic offsets based on the width of the device screen. The Map get's iterated over internally in a sequential fashion, meaning you need to supply key values in the order from low to high. The `key` of the `Map` defines the width treshold. The `value` of the `Map` defines the offset. Note that this value is in pixels.
-
-# Contributing
-Please see [Contributing Guidelines](.github/CONTRIBUTING.md).
-
-# Code of Conduct
-Please see [Code of Conduct](.github/CODE_OF_CONDUCT.md).
 
 # License
  [MIT](/LICENSE)
